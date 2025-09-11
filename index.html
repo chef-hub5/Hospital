@@ -230,10 +230,10 @@
     <div id="scroll-indicator" class="scroll-indicator"></div>
     <!-- Utility Header -->
     <div id="utility-header" class="bg-blue-900 text-white py-2">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
-            <div class="flex items-center space-x-4 mb-2 md:mb-0">
-                <span><i class="fas fa-phone mr-1"></i><a href="tel:+2348123456789" class="hover:text-blue-200">+234 812 345 6789</a></span>
-                <span><i class="fas fa-envelope mr-1"></i>info@medcarehospital.com</span>
+        <div class="container mx-auto px-4 flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-phone mr-2"></i><a href="tel:+2348123456789" class="hover:text-blue-200">+234 812 345 6789</a></span>
+                <span><i class="fas fa-envelope mr-2"></i>info@medcarehospital.com</span>
             </div>
             <div class="flex items-center space-x-4">
                 <span><i class="fas fa-clock mr-2"></i>24/7 Emergency Services</span>
@@ -243,11 +243,12 @@
 
     <!-- Main Header -->
     <header id="main-header" class="bg-white shadow-md">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-2 sm:px-4">
             <!-- Search Bar -->
             <div class="py-3 border-b">
                 <div class="flex items-center space-x-4">
-                    <div class="flex-1 flex items-center bg-gray-100 rounded-lg">
+                    <div class="flex flex-col sm:flex-row gap-2 sm:gap-0 max-w-4xl mx-auto">
+                <!-- All Departments - full width on mobile -->
                         <select class="bg-transparent px-4 py-3 border-r border-gray-300 focus:outline-none">
                             <option>All Departments</option>
                             <option>Emergency Medicine</option>

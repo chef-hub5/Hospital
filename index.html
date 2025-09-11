@@ -1,4 +1,3 @@
-
 <img src="your-image-url-here.jpg" alt="Emergency Medicine" class="...">
 <!DOCTYPE html>
 <html lang="en">
@@ -243,13 +242,34 @@
 
     <!-- Main Header -->
     <header id="main-header" class="bg-white shadow-md">
-        <div class="container mx-auto px-2 sm:px-4">
+        <div class="container mx-auto px-4">
             <!-- Search Bar -->
             <div class="py-3 border-b">
-                <div class="flex items-center space-x-4">
-                    <div class="flex flex-col sm:flex-row gap-2 sm:gap-0 max-w-4xl mx-auto">
-                <!-- All Departments - full width on mobile -->
-                        <select class="bg-transparent px-4 py-3 border-r border-gray-300 focus:outline-none">
+                <div class="flex flex-col sm:flex-row gap-2 sm:gap-0">
+                    <!-- Mobile: Stacked Layout -->
+                    <div class="sm:hidden w-full">
+                        <div class="flex mb-2">
+                            <select class="flex-1 px-3 py-3 bg-gray-100 border-r border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+                                <option>All Departments</option>
+                                <option>Emergency Medicine</option>
+                                <option>Cardiology</option>
+                                <option>Neurology</option>
+                                <option>Orthopedics</option>
+                                <option>Pediatrics</option>
+                                <option>Gynecology</option>
+                                <option>Radiology</option>
+                                <option>Laboratory</option>
+                            </select>
+                            <button class="px-4 py-3 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 transition-colors">
+                                <i class="fas fa-search text-sm"></i>
+                            </button>
+                        </div>
+                        <input type="text" placeholder="Search services, doctors..." class="w-full px-4 py-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+                    </div>
+                    
+                    <!-- Desktop: Inline Layout -->
+                    <div class="hidden sm:flex flex-1 items-center bg-gray-100 rounded-lg">
+                        <select class="bg-transparent px-3 md:px-4 py-3 border-r border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm md:text-base min-w-0 flex-shrink-0">
                             <option>All Departments</option>
                             <option>Emergency Medicine</option>
                             <option>Cardiology</option>
@@ -260,9 +280,9 @@
                             <option>Radiology</option>
                             <option>Laboratory</option>
                         </select>
-                        <input type="text" placeholder="Search for services, doctors, or information..." class="flex-1 px-4 py-3 bg-transparent focus:outline-none">
-                        <button class="px-6 py-3 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 transition-colors">
-                            <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search for services, doctors, or information..." class="flex-1 px-3 md:px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm md:text-base min-w-0">
+                        <button class="px-4 md:px-6 py-3 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 transition-colors flex-shrink-0">
+                            <i class="fas fa-search text-sm md:text-base"></i>
                         </button>
                     </div>
                 </div>
@@ -558,7 +578,7 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border">
                         <div class="h-48 overflow-hidden">
-                            <img src="New folder/doc.jpg" alt="Medical Residency Training" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.src=''; this.alt='Medical Residency Training Image'; this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <img src="New folder/nurse.jpg" alt="Medical Residency Training" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.src=''; this.alt='Medical Residency Training Image'; this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center" style="display: none;">
                                 <i class="fas fa-user-md text-blue-600 text-6xl"></i>
                             </div>
@@ -578,7 +598,7 @@
 
                     <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border">
                         <div class="h-48 overflow-hidden">
-                            <img src="New folder/nurse.jpg" alt="Nursing Education Program" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.src=''; this.alt='Nursing Education Program Image'; this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <img src="New folder/nurse educa.jpg" alt="Nursing Education Program" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.src=''; this.alt='Nursing Education Program Image'; this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="w-full h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center" style="display: none;">
                                 <i class="fas fa-graduation-cap text-green-600 text-6xl"></i>
                             </div>
@@ -727,7 +747,7 @@
 
                 <div id="cardiology" class="department-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-48 overflow-hidden">
-                        <img src="New folder/heart.jpg" alt="Cardiology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="" alt="Cardiology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="w-full h-full bg-blue-100 flex items-center justify-center">
                             <i class="fas fa-heartbeat text-blue-600 text-6xl"></i>
                         </div>
@@ -741,7 +761,7 @@
 
                 <div id="neurology" class="department-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-48 overflow-hidden">
-                        <img src="New folder/brain.jpg" alt="Neurology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="" alt="Neurology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="w-full h-full bg-purple-100 flex items-center justify-center">
                             <i class="fas fa-brain text-purple-600 text-6xl"></i>
                         </div>
@@ -755,7 +775,7 @@
 
                 <div id="orthopedics" class="department-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-48 overflow-hidden">
-                        <img src="New folder/bone.jpg" alt="Orthopedics" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="" alt="Orthopedics" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="w-full h-full bg-green-100 flex items-center justify-center">
                             <i class="fas fa-bone text-green-600 text-6xl"></i>
                         </div>
@@ -769,7 +789,7 @@
 
                 <div id="pediatrics" class="department-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-48 overflow-hidden">
-                        <img src="New folder/baby.jpg" alt="Pediatrics" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="" alt="Pediatrics" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="w-full h-full bg-yellow-100 flex items-center justify-center">
                             <i class="fas fa-baby text-yellow-600 text-6xl"></i>
                         </div>
@@ -783,7 +803,7 @@
 
                 <div id="gynecology" class="department-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-48 overflow-hidden">
-                        <img src="New folder/gynecol.jpg" alt="Gynecology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="" alt="Gynecology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="w-full h-full bg-pink-100 flex items-center justify-center">
                             <i class="fas fa-female text-pink-600 text-6xl"></i>
                         </div>
@@ -797,7 +817,7 @@
 
                 <div class="department-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-48 overflow-hidden">
-                        <img src="New folder/radio.jpg" alt="Radiology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="" alt="Radiology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="w-full h-full bg-indigo-100 flex items-center justify-center">
                             <i class="fas fa-x-ray text-indigo-600 text-6xl"></i>
                         </div>
@@ -811,7 +831,7 @@
 
                 <div class="department-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-48 overflow-hidden">
-                        <img src="New folder/lab.jpg" alt="Laboratory" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="" alt="Laboratory" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="w-full h-full bg-teal-100 flex items-center justify-center">
                             <i class="fas fa-flask text-teal-600 text-6xl"></i>
                         </div>
@@ -825,7 +845,7 @@
 
                 <div class="department-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="h-48 overflow-hidden">
-                        <img src="New folder/pharm.jpg" alt="Pharmacy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="" alt="Pharmacy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="w-full h-full bg-orange-100 flex items-center justify-center">
                             <i class="fas fa-pills text-orange-600 text-6xl"></i>
                         </div>
@@ -1631,24 +1651,35 @@
         const today = new Date().toISOString().split('T')[0];
         document.querySelector('input[type="date"]').setAttribute('min', today);
 
-        // Search functionality
-        document.querySelector('.bg-blue-600.text-white.rounded-r-lg').addEventListener('click', function() {
-            const searchInput = document.querySelector('input[placeholder*="Search"]');
-            const searchTerm = searchInput.value.trim();
-            if (searchTerm) {
-                // Simple search - scroll to departments section
-                scrollToSection('departments');
-            }
-        });
-
-        // Enter key search
-        document.querySelector('input[placeholder*="Search"]').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                const searchTerm = this.value.trim();
+        // Search functionality for both mobile and desktop
+        document.querySelectorAll('.bg-blue-600.text-white.rounded-r-lg').forEach(button => {
+            button.addEventListener('click', function() {
+                const searchInputs = document.querySelectorAll('input[placeholder*="Search"]');
+                let searchTerm = '';
+                
+                // Get search term from visible input
+                searchInputs.forEach(input => {
+                    if (input.offsetParent !== null && input.value.trim()) {
+                        searchTerm = input.value.trim();
+                    }
+                });
+                
                 if (searchTerm) {
                     scrollToSection('departments');
                 }
-            }
+            });
+        });
+
+        // Enter key search for all search inputs
+        document.querySelectorAll('input[placeholder*="Search"]').forEach(input => {
+            input.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    const searchTerm = this.value.trim();
+                    if (searchTerm) {
+                        scrollToSection('departments');
+                    }
+                }
+            });
         });
 
         // Performance optimizations
